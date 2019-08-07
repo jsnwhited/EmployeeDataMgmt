@@ -10,6 +10,8 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig)
 
+var database = firebase.database()
+
 $('#submit').on('click', function(){
     console.log('click')
     database.ref().push({
